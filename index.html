@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xiaomi India</title>
+    <link rel="stylesheet" href="style.css">"
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="https://www.mi.com/in/"><img src="images/logo.png"></a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="https://www.mi.com/in/"><b>Home</b></a></li>
+                    <li><a href="https://www.mi.com/in/products"><b>Shop</b></a></li>
+                    <li><a href="https://www.mi.com/in/service/authorized_stores/"><b>Find Stores</b></a></li>
+                    <li><a href="https://www.mi.com/in/service/online/"><b>Contact Us</b></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <a href="https://www.mi.com/in/mi-11-ultra/"><img src="images/mobile.png" class="mobile" style="top:520px;left:80px;width:600px;height:auto;"/>
+            <div id="circle"></a>
+                <div class="feature one">
+                    <img src="images/camera.png">
+                    <div>
+                        <br>
+                        <hi><b>Camera</b></hi>
+                        <p>12MP, Wide Angle Lens</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="images/processor.png">
+                    <div>
+                        <br>
+                        <hi><b>Processor</b></hi>
+                        <p>Snapdragon 888 Octa-Core</p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <img src="images/display.png">
+                    <div>
+                        <br>
+                        <hi><b>Display</b></hi>
+                        <p>6" AMOLED Display</p>
+                    </div>
+                </div>
+                <div class="feature four">
+                    <img src="images/battery.png">
+                    <div>
+                        <br>
+                        <hi><b>Battery</b></hi>
+                        <p>6000mAh with 50W fast charging</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" id="UpBtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png" id="DownBtn">
+        </div>
+    </div>
+
+    <script>
+        var circle = document.getElementById("circle");
+        var UpBtn = document.getElementById("UpBtn");
+        var DownBtn = document.getElementById("DownBtn");
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+
+        UpBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+        DownBtn.onclick = function(){
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+        }
+    </script>
+</body>
+</html>
